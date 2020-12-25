@@ -67,15 +67,15 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let currentHour = prompt("What is the current hour?");
-      if (currentHour < 12) {
-        alert("Good Morning!");
+      let country = prompt("What country are you from?");
+      country = country.toLowerCase();
+      country = country.trim();
+      country = country.replace("brasil", "brazil");
+
+      if (country === "brazil" || country === "portugal") {
+        alert("You speak Portuguese!");
       } else {
-        if (currentHour < 18) {
-          alert("Good Afternoon!");
-        } else {
-          alert("Good Evening!");
-        }
+        alert("You don't speak Portuguese");
       }
     </script>
   </body>
