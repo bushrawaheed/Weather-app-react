@@ -67,19 +67,24 @@
       <button>Apply Now</button>
     </section>
     <script>
-      function country() {
-        let country = prompt("What country are you from?");
-        country = country.toLowerCase();
-        country = country.trim();
-        country = country.replace("brasil", "brazil");
+      function applyNow() {
+        let person = prompt("What is your name?");
+        let personAge = prompt("What's your age?");
 
-        if (country === "brazil" || country === "portugal") {
-          alert("You speak Portuguese!");
+        person = person.toLowerCase();
+        person = person.trim();
+        person = person.replace("persone", "person");
+
+        if (personAge >= 18) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Hi! " + person + " , Welcome to SheCodes☺";
         } else {
-          alert("Go learn Portuguese!");
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Sorry, " + person + " You cannot join SheCodes ☹";
         }
       }
-      country();
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyNow);
     </script>
   </body>
 </html>
