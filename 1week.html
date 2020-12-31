@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dermaklar</title>
+    <style>
+      body {
+          background:linear-gradient(#D3C7AE,#ffffff)
+        
+      }
+      h1 {
+        color: #3f4c43;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h2 {
+        color: #4b735f;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 5 auto;
+        font-size: 18px;
+      }
+      img {
+        display: center;
+        margin: 1px 5px 1px 5px;
+        max-width: 50%;
+        padding: 1px;
+        border: 1px solid #9fa595;
+        border-radius: 1px;
+      }
+      p {
+        color: #b98066;
+        line-height: 2;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .link {
+        margin-top: 50px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        color: #d3c7ae;
+        background-color: #88606b;
+        margin: 20px auto;
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px;
+        font-size: 17px;
+        font-weight: lighter;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        box-shadow: 2px #d3c7ae;
+        transition: all 100ms ease-in-out;
+      }
+      button:hover {
+        background-color: #d3c7ae;
+        cursor: pointer;
+        box-shadow: 2px #d3c7ae;
+        color: #88606b;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px 30px 15px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://d1ululg65bfe3q.cloudfront.net/images/blog/the-benefits-of-organic-beauty-products-and-adding-them-to-your-skincare-regimen-1.jpg"
+        alt="Organic Products"
+      />
+      <h1>Dermaklar</h1>
+      <h2>Handmade Organic Products</h2>
+
+      <p>
+        <span style="color: #88606b; font-size: 50px">O</span
+        ><strong>rganic soaps</strong> are simply better for your skin. It
+        contains natural ingredients such as plant-derived base oils, glycerin,
+        and essential oils. ... It's better for animals because its ingredients
+        are already recognized as safe, so no animal testing is necessary.
+      </p>
+
+      <a
+        href="https://www.changeyourenergy.com/blog/1257/the-benefits-of-organic-beauty-products-and-adding-them-to-your-skincare-regimen"
+        target="_blank"
+        class="link"
+      >
+        learn more about it in here
+      </a>
+
+      <button>👉🏼Shop me</button>
+      <hr>
+      <p class="footer">
+        <em>This page was built by</em>
+        <a href="https://www.instagram.com/dermaklar/" target="_blank">
+          <em>Bushra Waheed</em>
+        </a>
+      </p>
+    </hr>
+    </div>
+  </body>
+</html>
+<script>
+  function country() {
+    let name = prompt("What's your name?");
+    let country = prompt("In which country do you live?");
+    name = name.trim();
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+    country = country.trim();
+    country = country.toLowerCase();
+    country = country.charAt(0).toUpperCase() + country.slice(1);
+    console.log(country)
+    if (country === 'Germany' || country === 'Deutschland') {
+      let h1 = document.querySelector("h1");
+      h1.innerHTML =
+        "😀 <br /> Congratulations  " +
+        name +
+        " ! there will be free delivery in  " +
+        country;
+    } else 
+    {
+    alert("Sorry,we can not deliver in your country");
+    
+        let h1 = document.querySelector("h1");
+      h1.innerHTML =
+        "😞 <br /> Sorry  " + name + " ! we can't deliver in " + country;
+    }
+  }
+  let changeButton = document.querySelector("button");
+  changeButton.addEventListener("click", country);
+</script>
