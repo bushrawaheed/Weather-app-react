@@ -7,7 +7,7 @@
     <style>
       .container {
         display: block;
-        margin: 120px 0;
+        margin: 100px 0;
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
       }
       h1 {
@@ -22,10 +22,14 @@
         font-weight: 500px;
         line-height: 40px;
       }
-      p {
+      .parag{
         text-align: center;
         font-size: 18px;
         font-family: monospace;
+      }
+     
+      section span{
+        font-weight: bolder;
       }
       button {
         display: block;
@@ -45,18 +49,27 @@
         box-shadow: 1px whitesmoke;
         transition: all 10ms ease-in-out;
       }
+      #header {
+        display: block;
+      }
     </style>
   </head>
   <body>
+    <header id="header">
     <div class="container">
       <h1>👩🏼‍💻SheCodes is a Coding Workshop for Women</h1>
       <h2>Access a new career in Technology</h2>
-      <p>
-        SheCodes teaches coding,design and management skills to women
+      </header>
+      <section class="parag">
+        <p>      
+          SheCodes teaches coding,design and management skills to women
         <br />
-        <strong>Limited number of spots available!</strong>
+        <span class="important">Limited number of spots available!</span>
       </p>
+    </section>
+    <footer>
       <button>Join now</button>
+      </footer>
     </div>
   </body>
 </html>
