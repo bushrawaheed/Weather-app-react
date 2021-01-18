@@ -1,0 +1,58 @@
+body {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  font-family: "Yusei Magic", sans-serif;
+  padding: 0 20px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: #a7c5eb;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+}
+h1 i {
+  color: #008891;
+  font-size: 60px;
+}
+a {
+  color: #cdd0cb;
+}
+p {
+  color: #dddddd;
+}
+
+i.fas.fa-robot {
+  color: #d1d2cd;
+  font-size: 70px;
+  padding: 15px;
+}
+i.fas.fa-satellite-dish {
+  color: #ff7339;
+  font-size: 80px;
+  padding: 15px;
+}
+i.fas.fa-rocket {
+  color: #f01363;
+  font-size: 90px;
+  padding: 15px;
+}
